@@ -1,3 +1,9 @@
+const passkey = prompt("請輸入密鑰:");
+while (passkey !== "cool-happy-cow") {
+  alert("密鑰錯誤，請重新輸入!");
+  passkey = prompt("請輸入密鑰:");
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
   fetch('/images-data')
     .then(response => response.json())
